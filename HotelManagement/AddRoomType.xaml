@@ -1,0 +1,15 @@
+﻿<Window x:Class="HotelManagement.AddRoomType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add New Room Type" Height="300" Width="350" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Room Type:" HorizontalAlignment="Left" Margin="29,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTypeName" HorizontalAlignment="Left" Height="30" Margin="111,41,0,0" TextWrapping="Wrap" Text="Type Name" VerticalAlignment="Top" Width="188"/>
+        <Label Content="  Guests:" HorizontalAlignment="Left" Margin="29,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAllowedGuests" HorizontalAlignment="Left" Height="30" Margin="111,95,0,0" TextWrapping="Wrap" Text="Allowed Guests" VerticalAlignment="Top" Width="188"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="139,200,0,0" VerticalAlignment="Top" Width="80" Height="27"/>
+        <Label Content="  Charges:" HorizontalAlignment="Left" Margin="29,145,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCharges" HorizontalAlignment="Left" Height="30" Margin="111,145,0,0" TextWrapping="Wrap" Text="Charges" VerticalAlignment="Top" Width="188"/>
+
+    </Grid>
+</Window>
