@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace DMLibrary.DataLayer
 {
-    class EmployeeDA
+    class ReservationDA
     {
         MainDbContext dbContext;
-
-        public EmployeeDA()
+        public ReservationDA()
         {
             dbContext = new MainDbContext();
         }
 
 
-    }//end of class EmployeeDA...
-}//end of namespace.....
+    }//end of class ReservationDA....
+}//end of namespace....
