@@ -23,5 +23,6 @@ namespace HotelManagement
         {
             InitializeComponent();
         }
-    }
-}
+    }//end of class AddJob....
+
+}//end of namespace HotelManagement.....
