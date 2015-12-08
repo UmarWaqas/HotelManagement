@@ -54,3 +54,11 @@ D:\HotelManagement\HotelManagement\obj\Debug\HotelManagement_MarkupCompile.cache
 D:\HotelManagement\HotelManagement\obj\Debug\HotelManagement.g.resources
 D:\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
 D:\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.Cache
+D:\HotelManagement\HotelManagement\bin\Debug\DMLiibrary.dll
+D:\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+D:\HotelManagement\HotelManagement\bin\Debug\DMLiibrary.pdb
+D:\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+D:\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\HotelManagement\HotelManagement\bin\Debug\ViewModel.dll
+D:\HotelManagement\HotelManagement\bin\Debug\ViewModel.pdb
