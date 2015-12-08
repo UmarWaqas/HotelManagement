@@ -24,6 +24,8 @@ namespace DMLibrary
         public string Email { get; set; }
         public string Cnic { get; set; }
         public string Address { get; set; }
+        public System.DateTime Date_of_Birth { get; set; }
+        public string Phone { get; set; }
     
         public virtual ICollection<Reservation> Reservations { get; set; }
     }

@@ -5,9 +5,9 @@
     <Grid>
         <Label Content="Job Name:" HorizontalAlignment="Left" Margin="29,41,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtJobType" HorizontalAlignment="Left" Height="30" Margin="116,41,0,0" TextWrapping="Wrap" Text="Job Type" VerticalAlignment="Top" Width="188"/>
-        <Label Content="  Salary:" HorizontalAlignment="Left" Margin="29,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Job Salary:" HorizontalAlignment="Left" Margin="29,101,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtSalary" HorizontalAlignment="Left" Height="30" Margin="116,101,0,0" TextWrapping="Wrap" Text="Salary" VerticalAlignment="Top" Width="188"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="139,176,0,0" VerticalAlignment="Top" Width="80" Height="27"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="139,176,0,0" VerticalAlignment="Top" Width="80" Height="27" Click="onClick"/>
 
     </Grid>
 </Window>
