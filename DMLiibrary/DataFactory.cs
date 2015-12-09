@@ -22,11 +22,17 @@ namespace DMLibrary
 
         }
 
-        public void insert<T>(T obj)
+        
+
+        public bool insert<T>(T obj)
         {
-            common.insert(obj);
+            return common.insert(obj);
         }
 
+        public List<Employee_Type>selectAllEmpTypes()
+        {
+            return empType.getAll();
+        }
         public List<T> selectAll<T>(T tye)
         {
            // Employee_Type e = new Employee_Type();

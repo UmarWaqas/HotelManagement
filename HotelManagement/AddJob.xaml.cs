@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DMLibrary;
+using ViewModel;
 
 namespace HotelManagement
 {
@@ -21,55 +22,60 @@ namespace HotelManagement
     public partial class AddJob : Window
     {
         DataFactory factory ;//= new DataFactory();
+        EmpTypeViewModel vmEmpType;
+        Employee_Type employeeType;
         public AddJob()
         {
             InitializeComponent();
-            factory = new DataFactory();
+            initializeEmployeeType();
         }
+        public void initializeEmployeeType()
+        {
+            factory = new DataFactory();
+            vmEmpType = new EmpTypeViewModel();
+            employeeType = new Employee_Type();
+            this.DataContext = vmEmpType;
+            /* vmEmployee.Name = "Full Name";
+             vmEmployee.Password = "default";
+             vmEmployee.Email = "Email";
+             vmEmployee.Address = "Address";
+             vmEmployee.CNIC = "CNIC";
+             vmEmployee.PhoneNumber = "Phone Number";
+             vmEmployee.EmployeeType = 0;*/
 
+        }//end of method initializeEmployee....
+
+        private void forceValidation()
+        {
+            txtJobType.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            txtSalary.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            
+        }//end of method ForceValidation....
        
 
         private void onClick(object sender, RoutedEventArgs e)
         {
-            Employee_Type employeeType = new Employee_Type();
-            factory.selectAll(employeeType);
-           // factory.selectAllEmp();
-            MessageBox.Show("Job Type is Added.");
-            #region Validations
-
-            if (string.IsNullOrEmpty(txtJobType.Text))
+            forceValidation();
+            if (Validation.GetHasError(txtJobType) || Validation.GetHasError(txtSalary))
             {
-                //errorProvider1.SetError(txtName, "Name is required");
-                txtJobType.Focus();
-                
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtSalary.Text))
-            {
-                //errorProvider1.SetError(txtRegNo, "RegNo is Required");
-                txtSalary.Focus();
+                MessageBox.Show("Error");
                 return;
             }
             else
             {
-                int tempReg;
-                if (!int.TryParse(txtSalary.Text, out tempReg))
-                {
-                   // errorProvider1.SetError(txtRegNo, "RegNo is incorrect");
-                    txtSalary.Focus();
-                    return;
-                }
-            }
 
+                employeeType.Type = txtJobType.Text.Trim();
+                employeeType.Salary = Convert.ToDecimal(txtSalary.Text.Trim());
+                //factory.insert(employee);
 
-            #endregion
+                if (factory.insert(employeeType))
+                    MessageBox.Show("Inserted");
+                else
+                    MessageBox.Show("Not Inserted");
 
+            }//end of else statement....
+           
             
-            employeeType.Type = txtJobType.Text.Trim();
-            employeeType.Salary = Convert.ToDecimal(txtSalary.Text.Trim());
-          //  factory.insert(employeeType);
-            factory.insert(employeeType);
            
         }//end of onClick method.....
          
