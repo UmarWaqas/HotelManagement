@@ -23,24 +23,28 @@ namespace HotelManagement
     {
         DataFactory factory;
         EmployeeViewModel vmEmployee;
+        Employee employee;
         public AddEmployee()
         {
             InitializeComponent();
             initializeEmployee();
-            factory = new DataFactory();
+            
            
         }
 
         public void initializeEmployee()
         {
+            factory = new DataFactory();
             vmEmployee = new EmployeeViewModel();
+            employee = new Employee();
             this.DataContext = vmEmployee;
-            vmEmployee.Name = "Full Name";
+           /* vmEmployee.Name = "Full Name";
             vmEmployee.Password = "default";
             vmEmployee.Email = "Email";
             vmEmployee.Address = "Address";
             vmEmployee.CNIC = "CNIC";
             vmEmployee.PhoneNumber = "Phone Number";
+            vmEmployee.EmployeeType = 0;*/
 
         }//end of method initializeEmployee....
 
@@ -52,7 +56,7 @@ namespace HotelManagement
             txtPhone.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtCnic.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtAddress.GetBindingExpression(TextBox.TextProperty).UpdateSource();
-           
+
             cbJobType.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
             dpDateOfBirth.GetBindingExpression(Xceed.Wpf.Toolkit.DateTimePicker.ValueProperty).UpdateSource();
             dpJoiningDate.GetBindingExpression(Xceed.Wpf.Toolkit.DateTimePicker.ValueProperty).UpdateSource();
@@ -68,17 +72,37 @@ namespace HotelManagement
                 MessageBox.Show("Error");
                 return;
             }
+            else
+            {
+                
+                employee.Name = txtName.Text.Trim();
+                employee.Email = txtEmail.Text.Trim();
+                employee.Password = txtPassword.Text.Trim();                
+                employee.Address = txtAddress.Text.Trim();
+                employee.Cnic = txtCnic.Text.Trim();
+                employee.Employee_Type = int.Parse(cbJobType.SelectedValue.ToString());
+                employee.Joining_Date = dpJoiningDate.Value.Value;
+                employee.Phone = txtPhone.Text.Trim();                
+                employee.Date_of_Birth = dpDateOfBirth.Value.Value;
+                //factory.insert(employee);
+
+                if (factory.insert(employee))
+                    MessageBox.Show("Inserted");
+                else
+                    MessageBox.Show("Not Inserted");
+
+            }
 
         }
 
         private void onWindowLoaded(object sender, RoutedEventArgs e)
         {
-            Employee_Type employeeType = new Employee_Type();
-            List<Employee_Type> empTypeData=factory.selectAll(employeeType);
+           // Employee_Type employeeType = new Employee_Type();
+            List<Employee_Type> empTypeData = factory.selectAll(new Employee_Type());
             cbJobType.ItemsSource = empTypeData;
             cbJobType.DisplayMemberPath = "Type";
             cbJobType.SelectedValuePath = "Id";
 
-        }//end of method onBtnClick....
+        }//end of method onWindowLoaded....
     }//end of class AddEmployee.....
 }

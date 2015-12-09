@@ -36,7 +36,7 @@
     </Window.Resources>
     <Grid>
         <Label Content="Name:" HorizontalAlignment="Left" Margin="80,70,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtName" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="23" Margin="169,74,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="203">
+        <TextBox x:Name="txtName" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="23" Margin="169,74,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="203" TabIndex="1">
             <TextBox.Text>
                 <Binding Path="Name"
                          ValidatesOnDataErrors="True"   
@@ -48,8 +48,8 @@
             </TextBox.Text>
 
         </TextBox>
-        <ComboBox x:Name="cbJobType"  Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Margin="169,31,0,0" VerticalAlignment="Top" Width="203">
-            <ComboBox.SelectedItem>
+        <ComboBox x:Name="cbJobType"  Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Margin="169,31,0,0" VerticalAlignment="Top" Width="203" TabIndex="0">
+            <ComboBox.SelectedValue>
                 <Binding Path="EmployeeType"
                          ValidatesOnDataErrors="True"   
                          UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
@@ -57,11 +57,11 @@
                         <ExceptionValidationRule/>
                     </Binding.ValidationRules>
                 </Binding>
-            </ComboBox.SelectedItem>
+            </ComboBox.SelectedValue>
 
         </ComboBox>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="80,115,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEmail"  Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="23" Margin="169,119,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="203">
+        <TextBox x:Name="txtEmail"  Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="23" Margin="169,119,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="203" TabIndex="2">
             <TextBox.Text>
                 <Binding Path="Email"
                          ValidatesOnDataErrors="True"   
@@ -74,7 +74,7 @@
         </TextBox>
         <Label Content="Password:" HorizontalAlignment="Left" Margin="80,158,0,0" VerticalAlignment="Top"/>
         <Label Content="CNIC:" HorizontalAlignment="Left" Margin="80,203,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCnic" HorizontalAlignment="Left" Height="23" Margin="169,207,0,0" TextWrapping="Wrap" Style="{StaticResource TooltipInError}"  VerticalAlignment="Top" Width="203">
+        <TextBox x:Name="txtCnic" HorizontalAlignment="Left" Height="23" Margin="169,207,0,0" TextWrapping="Wrap" Style="{StaticResource TooltipInError}"  VerticalAlignment="Top" Width="203" TabIndex="4">
             <TextBox.Text>
                 <Binding Path="CNIC"
                          ValidatesOnDataErrors="True"   
@@ -87,7 +87,7 @@
 
         </TextBox>
         <Label Content="Phone:" HorizontalAlignment="Left" Margin="80,247,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPhone" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="23" Margin="169,251,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="203">
+        <TextBox x:Name="txtPhone" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="23" Margin="169,251,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="203" TabIndex="5">
             <TextBox.Text>
                 <Binding Path="PhoneNumber"
                          ValidatesOnDataErrors="True"   
@@ -101,7 +101,7 @@
         <Label Content="Job Type:" HorizontalAlignment="Left" Margin="80,27,0,0" VerticalAlignment="Top"/>
         <Label Content="Address:" HorizontalAlignment="Left" Margin="80,295,0,0" VerticalAlignment="Top"/>
         <Label Content="Job Start:" HorizontalAlignment="Left" Margin="80,390,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAddress" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="73" Margin="169,295,0,0" VerticalAlignment="Top" Width="203" >
+        <TextBox x:Name="txtAddress" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="73" Margin="169,295,0,0" VerticalAlignment="Top" Width="203" TabIndex="6" >
             <TextBox.Text>
                 <Binding Path="Address"
                          ValidatesOnDataErrors="True"   
@@ -113,7 +113,7 @@
             </TextBox.Text>
 
         </TextBox>
-        <xctk:DateTimePicker x:Name="dpJoiningDate" Style="{StaticResource TooltipInError}" Width="203" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,390,0,0" Format="LongDate" >
+        <xctk:DateTimePicker x:Name="dpJoiningDate" Style="{StaticResource TooltipInError}" Width="203" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,390,0,0" Format="LongDate" TabIndex="7" >
             <xctk:DateTimePicker.Value>
                 <Binding Path="JoiningDate"
                          ValidatesOnDataErrors="True"   
@@ -124,8 +124,8 @@
                 </Binding>
             </xctk:DateTimePicker.Value>
         </xctk:DateTimePicker>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="214,484,0,0" VerticalAlignment="Top" Width="82" Click="onBtnClick"/>
-        <TextBox x:Name="txtPassword" MaxLength="10"  Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Margin="169,163,0,0" VerticalAlignment="Top" Width="203" Height="21" >
+        <Button Content="Save" HorizontalAlignment="Left" Margin="214,484,0,0" VerticalAlignment="Top" Width="82" Click="onBtnClick" TabIndex="9"/>
+        <TextBox x:Name="txtPassword" MaxLength="10"  Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Margin="169,163,0,0" VerticalAlignment="Top" Width="203" Height="21" TabIndex="3" >
             <TextBox.Text>
                 <Binding Path="Password"
                          ValidatesOnDataErrors="True"   
@@ -137,7 +137,7 @@
             </TextBox.Text>
         </TextBox>
         <Label Content="D.O.B" HorizontalAlignment="Left" Margin="80,437,0,0" VerticalAlignment="Top"/>
-        <xctk:DateTimePicker x:Name="dpDateOfBirth" Style="{StaticResource TooltipInError}" Width="203" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,437,0,0" Format="LongDate" >
+        <xctk:DateTimePicker x:Name="dpDateOfBirth" Style="{StaticResource TooltipInError}" Width="203" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,437,0,0" Format="LongDate" TabIndex="8" >
             <xctk:DateTimePicker.Value>
                 <Binding Path="DateOfBirth"
         			ValidatesOnDataErrors="True"   
