@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-   public class ReservationViewModel : IDataErrorInfo
+    public class EmployeeViewModel : IDataErrorInfo
     {
         #region SetterAndGetters
-        public int Id { set; get; }
+        public int Id{ set; get; }
         private string name;
-        public string Name
+        public string Name 
         {
             set { name = value; }
             get { return name; }
@@ -23,13 +23,12 @@ namespace ViewModel
             set { email = value; }
             get { return email; }
         }
-        private string cnic;
-        public string CNIC
+        private string password;
+        public string Password
         {
-            set { cnic = value; }
-            get { return cnic; }
+            set { password = value; }
+            get { return password; }
         }
-       
         private string phoneNumber;
         public string PhoneNumber
         {
@@ -42,42 +41,25 @@ namespace ViewModel
             set { address = value; }
             get { return address; }
         }
-        
-        private int roomNumber;
-        public int RoomNumber
+        private int employeeType;
+        public int EmployeeType
         {
-            set
-            {
-                roomNumber = value;
-            }
-            get
-            {
-                return roomNumber;
-            }
+            set { 
+                employeeType = value; }
+            get {
+                return employeeType; }
         }
-        private int roomType;
-        public int RoomType
+        private DateTime joiningDate=DateTime.Now;
+        public DateTime JoiningDate
         {
-            set
-            {
-                roomType = value;
-            }
-            get
-            {
-                return roomType;
-            }
+            set { joiningDate = value; }
+            get { return joiningDate; }
         }
-        private int nights;
-        public int Nights
+        private string cnic;
+        public string CNIC
         {
-            set
-            {
-                nights = value;
-            }
-            get
-            {
-                return nights;
-            }
+            set { cnic = value; }
+            get { return cnic; }
         }
         private DateTime dateOfBirth = DateTime.Now;
         public DateTime DateOfBirth
@@ -85,20 +67,9 @@ namespace ViewModel
             set { dateOfBirth = value; }
             get { return dateOfBirth; }
         }
-        private DateTime checkInDate = DateTime.Now;
-        public DateTime CheckInDate
-        {
-            set { checkInDate = value; }
-            get { return checkInDate; }
-        }
-        
-        private DateTime checkOutDate = DateTime.Now;
-        public DateTime CheckOutDate
-        {
-            set { checkOutDate = value; }
-            get { return checkOutDate; }
-        }
         #endregion
+
+
 
         public string Error
         {
@@ -107,7 +78,7 @@ namespace ViewModel
 
         public string this[string propName]
         {
-            get
+            get 
             {
                 string result = null;
 
@@ -127,11 +98,11 @@ namespace ViewModel
                     }
                 }
 
-                else if (propName == "Nights")
+                else if (propName == "Password")
                 {
-                    if (this.nights<=0)
+                    if (string.IsNullOrEmpty(this.password))
                     {
-                        result = "Night is required";
+                        result = "Password is required";
                     }
                 }
                 else if (propName == "PhoneNumber")
@@ -155,31 +126,25 @@ namespace ViewModel
                         result = "CNIC is required";
                     }
                 }
-                else if (propName == "RoomType")
+                else if (propName == "EmployeeType")
                 {
-                    // int mValue = Convert.ToInt32(this.employeeType);
-                    if (this.roomType <= 0)
+                   // int mValue = Convert.ToInt32(this.employeeType);
+                    if (this.employeeType <= 0)
                     {
-                        result = "Room Type is required";
-                    }
-                }
-                else if (propName == "RoomNumber")
-                {
-                    // int mValue = Convert.ToInt32(this.employeeType);
-                    if (this.roomNumber <= 0)
-                    {
-                        result = "Room Number is required";
+                        result = "Employee Type is required";
                     }
                 }
 
 
                 return result;
-                throw new NotImplementedException();
-
+                throw new NotImplementedException(); 
+                
 
             }//end of get statement....
 
-
+            
         }//end of Implemented method.....
-    }//end of class ReservationViewModel....
+    }//end of class EmployeeViewModel....
+
+
 }//end of namespace....

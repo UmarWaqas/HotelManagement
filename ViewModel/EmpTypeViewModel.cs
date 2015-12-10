@@ -7,35 +7,21 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-    public class RoomTypeViewModel : IDataErrorInfo
+    public class EmpTypeViewModel : IDataErrorInfo
     {
-         #region SetterAndGetters
         private int id;
         private string type;
-        private decimal charges;
-        private int capacity;
+        private decimal salary;
 
-        public int Capacity
+        public decimal Salary
         {
             set
             {
-                capacity = value;
+                salary = value;
             }
             get
             {
-                return capacity;
-            }
-        }
-
-        public decimal Charges
-        {
-            set
-            {
-                charges = value;
-            }
-            get
-            {
-                return charges;
+                return salary;
             }
         }
 
@@ -63,8 +49,6 @@ namespace ViewModel
         }
 
 
-        #endregion
-
         public string Error
         {
             get { throw new NotImplementedException(); }
@@ -72,7 +56,7 @@ namespace ViewModel
 
         public string this[string propertyName]
         {
-            get
+            get 
             {
                 string result = null;
 
@@ -80,30 +64,21 @@ namespace ViewModel
                 {
                     if (string.IsNullOrEmpty(this.type))
                     {
-                        result = "Room Type is required";
+                        result = "Employee Type is required";
                     }
                 }
 
-                else if (propertyName == "Capacity")
+                else if (propertyName == "Salary")
                 {
-                    if (this.capacity <= 0)
+                    if (this.salary<=0)
                     {
-                        result = "Room Capacity is required";
-                    }
-                }
-
-                else if (propertyName == "Charges")
-                {
-                    if (this.charges <= 0)
-                    {
-                        result = "Number of Guests are required";
+                        result = "Salary is required";
                     }
                 }
 
                 return result;
-                throw new NotImplementedException();
+                throw new NotImplementedException(); 
             }
         }
-    }//end of class RoomTypeViewModel....
-    
+    }//end of class EmpTypeViewModel....
 }//end of namespace....

@@ -31,7 +31,6 @@ namespace DMLibrary
         public int Employee_Type { get; set; }
         public System.DateTime Joining_Date { get; set; }
         public string Phone { get; set; }
-        public System.DateTime Date_of_Birth { get; set; }
     
         public virtual Employee_Type Employee_Type1 { get; set; }
         public virtual ICollection<Payable> Payables { get; set; }
