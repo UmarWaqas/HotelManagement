@@ -113,5 +113,7 @@ namespace HotelManagement
             cbJobType.SelectedValuePath = "Id";*/
 
         }//end of method Window_Loaded....
-    }
-}
+    }//end of class AddReservation....
+
+}//end of namespace....
+

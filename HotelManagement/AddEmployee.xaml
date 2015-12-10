@@ -13,6 +13,7 @@
                 </Trigger>
             </Style.Triggers>
         </Style>-->
+        
         <Style TargetType="{x:Type Control}" x:Key="TooltipInError">
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="Margin" Value="0,2,40,2" />
@@ -33,6 +34,8 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        
     </Window.Resources>
     <Grid>
         <Label Content="Name:" HorizontalAlignment="Left" Margin="80,70,0,0" VerticalAlignment="Top"/>
@@ -125,17 +128,18 @@
             </xctk:DateTimePicker.Value>
         </xctk:DateTimePicker>
         <Button Content="Save" HorizontalAlignment="Left" Margin="214,484,0,0" VerticalAlignment="Top" Width="82" Click="onBtnClick" TabIndex="9"/>
-        <TextBox x:Name="txtPassword" MaxLength="10"  Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Margin="169,163,0,0" VerticalAlignment="Top" Width="203" Height="21" TabIndex="3" >
-            <TextBox.Text>
-                <Binding Path="Password"
-                         ValidatesOnDataErrors="True"   
-                         UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
-                    <Binding.ValidationRules>
-                        <ExceptionValidationRule/>
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
+        <PasswordBox x:Name="txtPassword" MaxLength="10"  PasswordChar="*" HorizontalAlignment="Left" Margin="169,163,0,0" VerticalAlignment="Top" Width="158" Height="21" TabIndex="3" PasswordChanged="txtPassword_PasswordChanged" >
+           
+        </PasswordBox>
+        
+            <Border Background="Red" Visibility="Hidden" Name="borPassErr" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,164,130,0" Width="18" Height="18" CornerRadius="9"
+                            ToolTip="Password is Required">
+                <TextBlock Text="!" VerticalAlignment="center" HorizontalAlignment="center" FontWeight="Bold" Foreground="white">
+                </TextBlock>
+            </Border>
+            
+     
+
         <Label Content="D.O.B" HorizontalAlignment="Left" Margin="80,437,0,0" VerticalAlignment="Top"/>
         <xctk:DateTimePicker x:Name="dpDateOfBirth" Style="{StaticResource TooltipInError}" Width="203" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,437,0,0" Format="LongDate" TabIndex="8" >
             <xctk:DateTimePicker.Value>
