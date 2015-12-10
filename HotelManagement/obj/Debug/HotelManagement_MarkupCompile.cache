@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\HotelManagement\HotelManagement\obj\Debug\
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\
 HotelManagement
 none
 false
 DEBUG;TRACE
-D:\HotelManagement\HotelManagement\App.xaml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\App.xaml
 8-1401181039
 
 12-396084038
-15202026065
+16902834704
 AddEmployee.xaml;AddJob.xaml;AddReservation.xaml;AddRoom.xaml;AddRoomType.xaml;MainWindow.xaml;SignIn.xaml;SignInWindow.xaml;
 
 False

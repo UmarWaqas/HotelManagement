@@ -50,7 +50,7 @@ namespace DMLibrary.DataLayer
                // dbContextForCustomer.Customers.Remove(cst);
 
             }
-            return dbContext.SaveChanges() > 0;
+            return dbContext.SaveChanges() > 0; //Common.dbContext.SaveChanges() > 0;
         }//end of method updateCustomer....
     }
 }

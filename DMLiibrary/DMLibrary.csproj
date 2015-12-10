@@ -48,12 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLayer\Common.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataFactory.cs" />
     <Compile Include="DataLayer\CustomerDA.cs" />
     <Compile Include="DataLayer\EmployeeDA.cs" />
+    <Compile Include="DataLayer\EmployeeTypeDA.cs" />
     <Compile Include="DataLayer\ReservationDA.cs" />
     <Compile Include="DataModel.Context.cs">
       <AutoGen>True</AutoGen>

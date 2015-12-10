@@ -13,7 +13,9 @@
           <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Cnic" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Address" Type="varchar" MaxLength="500" />
+          <Property Name="Address" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Date_of_Birth" Type="datetime" Nullable="false" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Employee">
           <Key>
@@ -26,8 +28,9 @@
           <Property Name="Address" Type="varchar" MaxLength="500" Nullable="false" />
           <Property Name="Cnic" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Employee_Type" Type="int" Nullable="false" />
-          <Property Name="Joining_Date" Type="date" Nullable="false" />
+          <Property Name="Joining_Date" Type="datetime" Nullable="false" />
           <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Date_of_Birth" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="Employee_Type">
           <Key>
@@ -97,7 +100,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Capacity" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Capacity" Type="int" Nullable="false" />
           <Property Name="Charges" Type="money" Nullable="false" />
         </EntityType>
         <Association Name="FK_Employee_Employee_Type">
@@ -267,8 +270,10 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Cnic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Reservations" Relationship="Self.FK_Reservation_Customer" FromRole="Customer" ToRole="Reservation" />
+          <Property Name="Date_of_Birth" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Employee">
           <Key>
@@ -281,13 +286,14 @@
           <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Cnic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Employee_Type" Type="Int32" Nullable="false" />
-          <Property Name="Joining_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Joining_Date" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Employee_Type1" Relationship="Self.FK_Employee_Employee_Type" FromRole="Employee" ToRole="Employee_Type" />
           <NavigationProperty Name="Payables" Relationship="Self.FK_Payable_Employee" FromRole="Employee" ToRole="Payable" />
           <NavigationProperty Name="Reservations" Relationship="Self.FK_Reservation_Employee" FromRole="Employee" ToRole="Reservation" />
           <NavigationProperty Name="Rooms" Relationship="Self.FK_Room_Employee_Maintainer" FromRole="Employee" ToRole="Room" />
           <NavigationProperty Name="Rooms1" Relationship="Self.FK_Room_Employee_Manager" FromRole="Employee" ToRole="Room" />
+          <Property Name="Date_of_Birth" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <EntityType Name="Employee_Type">
           <Key>
@@ -295,7 +301,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Salary" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="Salary" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Employee_Type" FromRole="Employee_Type" ToRole="Employee" />
         </EntityType>
         <EntityType Name="History">
@@ -368,7 +374,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Capacity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Capacity" Type="Int32" Nullable="false" />
           <Property Name="Charges" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <NavigationProperty Name="Rooms" Relationship="Self.FK_Room_Room_Type" FromRole="Room_Type" ToRole="Room" />
         </EntityType>
@@ -536,6 +542,8 @@
           <EntitySetMapping Name="Customers">
             <EntityTypeMapping TypeName="HotelDbModel.Customer">
               <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Date_of_Birth" ColumnName="Date_of_Birth" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
@@ -547,6 +555,7 @@
           <EntitySetMapping Name="Employees">
             <EntityTypeMapping TypeName="HotelDbModel.Employee">
               <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="Date_of_Birth" ColumnName="Date_of_Birth" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />

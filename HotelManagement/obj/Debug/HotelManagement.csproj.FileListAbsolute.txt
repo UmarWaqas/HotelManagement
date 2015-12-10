@@ -62,3 +62,39 @@ D:\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
 D:\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
 D:\HotelManagement\HotelManagement\bin\Debug\ViewModel.dll
 D:\HotelManagement\HotelManagement\bin\Debug\ViewModel.pdb
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csprojResolveAssemblyReference.cache
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddEmployee.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddJob.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddReservation.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddRoom.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddRoomType.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\MainWindow.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\SignIn.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\SignInWindow.baml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddEmployee.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddJob.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddReservation.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddRoom.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\AddRoomType.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\MainWindow.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\SignIn.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\SignInWindow.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\App.g.cs
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\HotelManagement_MarkupCompile.cache
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.g.resources
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.Cache
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\DMLiibrary.dll
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\ViewModel.dll
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\DMLiibrary.pdb
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\ViewModel.pdb
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
