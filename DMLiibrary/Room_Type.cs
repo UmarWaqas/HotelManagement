@@ -21,7 +21,7 @@ namespace DMLibrary
     
         public int Id { get; set; }
         public string Type { get; set; }
-        public string Capacity { get; set; }
+        public int Capacity { get; set; }
         public decimal Charges { get; set; }
     
         public virtual ICollection<Room> Rooms { get; set; }

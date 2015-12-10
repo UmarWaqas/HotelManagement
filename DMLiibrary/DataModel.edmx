@@ -100,7 +100,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Capacity" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Capacity" Type="int" Nullable="false" />
           <Property Name="Charges" Type="money" Nullable="false" />
         </EntityType>
         <Association Name="FK_Employee_Employee_Type">
@@ -374,7 +374,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Capacity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Capacity" Type="Int32" Nullable="false" />
           <Property Name="Charges" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <NavigationProperty Name="Rooms" Relationship="Self.FK_Room_Room_Type" FromRole="Room_Type" ToRole="Room" />
         </EntityType>

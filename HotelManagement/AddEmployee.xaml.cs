@@ -28,6 +28,8 @@ namespace HotelManagement
         {
             InitializeComponent();
             initializeEmployee();
+            checkPassword();
+            
             
            
         }
@@ -52,7 +54,7 @@ namespace HotelManagement
         {
             txtName.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtEmail.GetBindingExpression(TextBox.TextProperty).UpdateSource();
-            txtPassword.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            //txtPassword.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtPhone.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtCnic.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtAddress.GetBindingExpression(TextBox.TextProperty).UpdateSource();
@@ -61,13 +63,29 @@ namespace HotelManagement
             dpDateOfBirth.GetBindingExpression(Xceed.Wpf.Toolkit.DateTimePicker.ValueProperty).UpdateSource();
             dpJoiningDate.GetBindingExpression(Xceed.Wpf.Toolkit.DateTimePicker.ValueProperty).UpdateSource();
         }//end of method ForceValidation....
-
+        private bool checkPassword()
+        {
+            if (string.IsNullOrEmpty(txtPassword.Password))
+            {
+                txtPassword.BorderBrush = Brushes.Red;
+                borPassErr.Visibility = System.Windows.Visibility.Visible;
+                return true;
+            }
+            else
+            {
+                txtPassword.BorderBrush = Brushes.Gray;
+                borPassErr.Visibility = System.Windows.Visibility.Hidden;
+            }
+            return false;
+        }
         private void onBtnClick(object sender, RoutedEventArgs e)
         {
+            
             forceValidation();
             if (Validation.GetHasError(txtName) || Validation.GetHasError(txtEmail) || Validation.GetHasError(txtPassword)
                || Validation.GetHasError(txtPhone) || Validation.GetHasError(txtCnic) || Validation.GetHasError(txtAddress)
-               || Validation.GetHasError(cbJobType) || Validation.GetHasError(dpDateOfBirth) || Validation.GetHasError(dpJoiningDate))
+               || Validation.GetHasError(cbJobType) || Validation.GetHasError(dpDateOfBirth) || Validation.GetHasError(dpJoiningDate)
+               || checkPassword() )
             {
                 MessageBox.Show("Error");
                 return;
@@ -77,7 +95,7 @@ namespace HotelManagement
                 
                 employee.Name = txtName.Text.Trim();
                 employee.Email = txtEmail.Text.Trim();
-                employee.Password = txtPassword.Text.Trim();                
+                employee.Password = txtPassword.Password.Trim();                
                 employee.Address = txtAddress.Text.Trim();
                 employee.Cnic = txtCnic.Text.Trim();
                 employee.Employee_Type = int.Parse(cbJobType.SelectedValue.ToString());
@@ -103,6 +121,11 @@ namespace HotelManagement
             cbJobType.DisplayMemberPath = "Type";
             cbJobType.SelectedValuePath = "Id";
 
+        }
+
+        private void txtPassword_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            checkPassword();
         }//end of method onWindowLoaded....
     }//end of class AddEmployee.....
 }
