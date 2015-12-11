@@ -70,7 +70,7 @@ namespace HotelManagement {
         #line hidden
         
         
-        #line 9 "..\..\AddEmployee.xaml"
+        #line 10 "..\..\AddEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ComboBox cbJobType;
         
@@ -78,7 +78,7 @@ namespace HotelManagement {
         #line hidden
         
         
-        #line 11 "..\..\AddEmployee.xaml"
+        #line 12 "..\..\AddEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtEmail;
         
@@ -86,7 +86,7 @@ namespace HotelManagement {
         #line hidden
         
         
-        #line 14 "..\..\AddEmployee.xaml"
+        #line 15 "..\..\AddEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtCnic;
         
@@ -94,7 +94,7 @@ namespace HotelManagement {
         #line hidden
         
         
-        #line 16 "..\..\AddEmployee.xaml"
+        #line 17 "..\..\AddEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtPhone;
         
@@ -102,7 +102,7 @@ namespace HotelManagement {
         #line hidden
         
         
-        #line 20 "..\..\AddEmployee.xaml"
+        #line 21 "..\..\AddEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.RichTextBox txtAddress;
         
@@ -110,7 +110,7 @@ namespace HotelManagement {
         #line hidden
         
         
-        #line 27 "..\..\AddEmployee.xaml"
+        #line 28 "..\..\AddEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal Xceed.Wpf.Toolkit.DateTimePicker dpJoiningDate;
         
@@ -118,7 +118,7 @@ namespace HotelManagement {
         #line hidden
         
         
-        #line 31 "..\..\AddEmployee.xaml"
+        #line 32 "..\..\AddEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.PasswordBox txtPassword;
         

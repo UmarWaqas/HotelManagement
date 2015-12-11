@@ -3,6 +3,29 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Abbasi Hotel" Height="350" Width="525" Activated="MainWindow1_Activated">
     <Grid>
+        <Menu Width="600" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="add_reservation" Header="_New..." >
+                    <MenuItem Header="add job"/>
+                    <MenuItem Header="add employee"/>
+                    <MenuItem Header="add room"/>
+                    <MenuItem Header="add reservation"/>
+                    
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Open..." />
+                <Separator />
+                <MenuItem Header="_Save" />
+                <MenuItem Header="_Save As..." />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Edit" />
+            <MenuItem Header="_View" />
+            <MenuItem Header="_Window" />
+            <MenuItem Header="_Help" />
+
+        </Menu>
         <StackPanel Name="stkTest" Orientation="Vertical"/>
         
     </Grid>

@@ -71,11 +71,47 @@
     <Compile Include="AddRoomType.xaml.cs">
       <DependentUpon>AddRoomType.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomerDetails.xaml.cs">
+      <DependentUpon>CustomerDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetail.xaml.cs">
+      <DependentUpon>EmployeeDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeRooms.xaml.cs">
+      <DependentUpon>FreeRooms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="History.xaml.cs">
+      <DependentUpon>History.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetail.xaml.cs">
+      <DependentUpon>ReservationDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.xaml.cs">
       <DependentUpon>SignIn.xaml</DependentUpon>
     </Compile>
     <Compile Include="SignInWindow.xaml.cs">
       <DependentUpon>SignInWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdmin.xaml.cs">
+      <DependentUpon>ViewAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomer.xaml.cs">
+      <DependentUpon>ViewCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployee.xaml.cs">
+      <DependentUpon>ViewEmployee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMaintainer.xaml.cs">
+      <DependentUpon>ViewMaintainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewManager.xaml.cs">
+      <DependentUpon>ViewManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReceptionist .xaml.cs">
+      <DependentUpon>ViewReceptionist .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReservation.xaml.cs">
+      <DependentUpon>ViewReservation.xaml</DependentUpon>
     </Compile>
     <Page Include="AddEmployee.xaml">
       <SubType>Designer</SubType>
@@ -97,6 +133,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CustomerDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmployeeDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FreeRooms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="History.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,11 +161,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ReservationDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SignIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SignInWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewEmployee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewMaintainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewReceptionist .xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewReservation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

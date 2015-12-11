@@ -82,3 +82,9 @@ C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\HotelManagement_Ma
 C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\HotelManagement.g.resources
 C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
 C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.Cache
+C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\employee details.baml
+C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\reservation details.baml
+C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\view employees.baml
+C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\employee details.g.cs
+C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\reservation details.g.cs
+C:\Users\Abdullah\Desktop\VpProject\HotelManagement\obj\Debug\view employees.g.cs
