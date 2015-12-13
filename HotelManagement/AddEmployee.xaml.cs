@@ -29,8 +29,7 @@ namespace HotelManagement
             InitializeComponent();
             initializeEmployee();
             checkPassword();
-            
-            
+                     
            
         }
 
@@ -40,6 +39,10 @@ namespace HotelManagement
             vmEmployee = new EmployeeViewModel();
             employee = new Employee();
             this.DataContext = vmEmployee;
+            List<Employee_Type> empTypeData = factory.selectAll(new Employee_Type());
+            cbJobType.ItemsSource = empTypeData;
+            cbJobType.DisplayMemberPath = "Type";
+            cbJobType.SelectedValuePath = "Id";
            /* vmEmployee.Name = "Full Name";
             vmEmployee.Password = "default";
             vmEmployee.Email = "Email";
@@ -116,16 +119,19 @@ namespace HotelManagement
         private void onWindowLoaded(object sender, RoutedEventArgs e)
         {
            // Employee_Type employeeType = new Employee_Type();
-            List<Employee_Type> empTypeData = factory.selectAll(new Employee_Type());
-            cbJobType.ItemsSource = empTypeData;
-            cbJobType.DisplayMemberPath = "Type";
-            cbJobType.SelectedValuePath = "Id";
+            
 
         }
 
         private void txtPassword_PasswordChanged(object sender, RoutedEventArgs e)
         {
             checkPassword();
+        }
+
+        private void onWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Visibility = Visibility.Hidden;
         }//end of method onWindowLoaded....
     }//end of class AddEmployee.....
 }

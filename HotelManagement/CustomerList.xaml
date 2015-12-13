@@ -1,0 +1,8 @@
+﻿<Window x:Class="HotelManagement.CustomerList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CustomerList" Height="300" Width="300" Closing="onWindowClosing">
+    <Grid>
+        
+    </Grid>
+</Window>

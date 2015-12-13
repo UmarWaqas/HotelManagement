@@ -1,0 +1,23 @@
+﻿<Window x:Class="HotelManagement.EmployeeList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Abbasi Hotel Employees" Height="600" Width="900" Closing="onWindowClosing">
+    <Grid>
+        <DataGrid Name="dgEmployees" AutoGenerateColumns="False" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="531" Width="882">
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Binding="{Binding Name}" Width="100" Header="Name"/>
+                <DataGridTextColumn Binding="{Binding EmployeeType}" Width="100" Header="Position"/>
+                <DataGridTextColumn Binding="{Binding Email}" Width="100" Header="Name"/>
+                <DataGridTextColumn Binding="{Binding DateOfBirth}" Width="100" Header="Date of Birth"/>
+                <DataGridTextColumn Binding="{Binding CNIC}" Width="100" Header="CNIC"/>
+                <DataGridTextColumn Binding="{Binding PhoneNumber}" Width="100" Header="Phone"/>
+                <DataGridTextColumn Binding="{Binding Address}" Width="100" Header="Address"/>
+                <DataGridTextColumn Binding="{Binding JoiningDate}" Width="100" Header="Job Start"/>
+                
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+    </Grid>
+</Window>

@@ -1,7 +1,7 @@
 ﻿<Window x:Name="addJob" x:Class="HotelManagement.AddJob"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Add New Job" Height="300" Width="350" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="Add New Catagory" Height="300" Width="350" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closing="onWindowClosing">
     <Window.Resources>
         <!--<Style x:Key="TooltipInError" TargetType="{x:Type Control}">
             <Style.Triggers>
@@ -34,7 +34,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Label Content="Job Name:" HorizontalAlignment="Left" Margin="29,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="29,41,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtJobType" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="30" Margin="116,41,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="188">
             <TextBox.Text>
                 <Binding Path="Type"
@@ -47,7 +47,7 @@
             </TextBox.Text>
             
         </TextBox>
-        <Label Content="Job Salary:" HorizontalAlignment="Left" Margin="29,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Salary:" HorizontalAlignment="Left" Margin="29,101,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtSalary" Style="{StaticResource TooltipInError}" HorizontalAlignment="Left" Height="30" Margin="116,101,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="188">
             <TextBox.Text>
                 <Binding Path="Salary"

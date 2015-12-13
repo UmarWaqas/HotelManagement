@@ -8,3 +8,15 @@ C:\Users\Umar Waqas\Source\Repos\HotelManagement\DMLiibrary\bin\Debug\EntityFram
 C:\Users\Umar Waqas\Source\Repos\HotelManagement\DMLiibrary\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Umar Waqas\Source\Repos\HotelManagement\DMLiibrary\obj\Debug\DMLiibrary.dll
 C:\Users\Umar Waqas\Source\Repos\HotelManagement\DMLiibrary\obj\Debug\DMLiibrary.pdb
+D:\HotelManagement\DMLiibrary\bin\Debug\DMLiibrary.dll.config
+D:\HotelManagement\DMLiibrary\bin\Debug\DMLiibrary.dll
+D:\HotelManagement\DMLiibrary\bin\Debug\DMLiibrary.pdb
+D:\HotelManagement\DMLiibrary\bin\Debug\EntityFramework.dll
+D:\HotelManagement\DMLiibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\HotelManagement\DMLiibrary\bin\Debug\EntityFramework.xml
+D:\HotelManagement\DMLiibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\HotelManagement\DMLiibrary\obj\Debug\DMLibrary.csprojResolveAssemblyReference.cache
+D:\HotelManagement\DMLiibrary\obj\Debug\DMLiibrary.dll
+D:\HotelManagement\DMLiibrary\obj\Debug\DMLiibrary.pdb
+D:\HotelManagement\DMLiibrary\bin\Debug\ViewModel.dll
+D:\HotelManagement\DMLiibrary\bin\Debug\ViewModel.pdb

@@ -1,9 +1,40 @@
 ﻿<Window x:Name="mainWindow" x:Class="HotelManagement.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Abbasi Hotel" Height="350" Width="525" Activated="MainWindow1_Activated">
+        Title="Abbasi Hotel" Height="350" Width="525" Activated="MainWindow1_Activated" Loaded="onWindowLoaded">
     <Grid>
+        <Menu Width="600" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Background="CornflowerBlue" FontFamily="Times New Roman" >
+            <MenuItem Header="_File">
+                <MenuItem x:Name="add_reservation" Header="_New..." >
+                    <MenuItem Header="Add New Reservation" Click="onReservationMenuItemClick"/>
+                    <MenuItem Header="Add New Employee" Click="onEmployeeMenuItemClick"/>
+                    <MenuItem Header="Add New Room" Click="onRoomMenuItemClick"/>
+                    <MenuItem Header="Add Room Catagory" Click="onRoomTypeMenuItemClick"/>
+                    <MenuItem Header="Add Employee Catagory" Click="onEmpPositionMenuItemClick"/>      
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Open..." >
+                    <MenuItem Header="Reservations" Click="onReservationListClick"/>
+                    <MenuItem Header="Employees" Click="onEmployeeListClick"/>
+                    <MenuItem Header="Customers" Click="onCustomerListClick"/>
+                    <MenuItem Header="Rooms" Click="onRoomsListClick"/>
+                    <MenuItem Header="Free Rooms" Click="onFreeRoomsListClick"/>
+                    <MenuItem Header="Reserved Rooms" Click="onReservedRoomsListClick"/>
+                    <MenuItem Header="Employee Catagories" Click="onEmpCatagoryListClick"/>
+                    <MenuItem Header="Room Catagories" Click="onRoomCatagoryListClick"/>
+                </MenuItem>
+                <Separator />
+               
+               
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Edit" />
+            <MenuItem Header="_View" />
+            <MenuItem Header="_Window" />
+            <MenuItem Header="_Help" />
+
+        </Menu>
         <StackPanel Name="stkTest" Orientation="Vertical"/>
-        
+
     </Grid>
 </Window>

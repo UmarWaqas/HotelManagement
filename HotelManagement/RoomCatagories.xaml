@@ -1,0 +1,9 @@
+﻿<Window x:Class="HotelManagement.RoomCatagories"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Room Catagories" Height="300" Width="300" Closing="onWindowClosing">
+    <Grid>
+        <DataGrid Name="dgRoomCatagories" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top" Height="259" Width="279"/>
+
+    </Grid>
+</Window>
