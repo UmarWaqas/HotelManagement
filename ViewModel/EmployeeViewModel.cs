@@ -73,7 +73,9 @@ namespace ViewModel
 
         public string Error
         {
-            get { throw new NotImplementedException(); }
+            get {
+                return null;
+                throw new NotImplementedException(); }
         }
 
         public string this[string propName]

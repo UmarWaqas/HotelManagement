@@ -12,18 +12,28 @@ namespace DMLibrary
     {
         CustomerDA cstobject;
         EmployeeTypeDA empType;
+        EmployeeDA employee;
         Common common;
         public DataFactory()
         {
             cstobject = new CustomerDA();
             empType = new EmployeeTypeDA();
-           
+            employee = new EmployeeDA();
             common = new Common();
 
         }
-
-        
-
+        public List<ViewModel.EmployeeViewModel> selectMaintainers()
+        {
+            return employee.selectMaintainers();
+        }
+        public List<ViewModel.EmployeeViewModel> selectManagers()
+        {
+            return employee.selectManagers();
+        }
+        public List<ViewModel.EmployeeViewModel>selectAllEmployees()
+        {
+            return employee.SelectAllEmployees();
+        }
         public bool insert<T>(T obj)
         {
             return common.insert(obj);

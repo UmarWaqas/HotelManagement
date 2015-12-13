@@ -112,6 +112,12 @@ namespace HotelManagement
             cbJobType.DisplayMemberPath = "Type";
             cbJobType.SelectedValuePath = "Id";*/
 
+        }
+
+        private void onWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Visibility = Visibility.Hidden;
         }//end of method Window_Loaded....
     }//end of class AddReservation....
 

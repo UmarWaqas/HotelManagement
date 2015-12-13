@@ -1,0 +1,9 @@
+﻿<Window x:Class="HotelManagement.RoomsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Abbasi Hotel Rooms" Height="600" Width="800" Closing="onWindowClosing">
+    <Grid>
+        <DataGrid Name="dgRooms" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="600" Width="800"/>
+
+    </Grid>
+</Window>

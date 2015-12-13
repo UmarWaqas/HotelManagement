@@ -77,6 +77,12 @@ namespace HotelManagement
            
             
            
+        }
+
+        private void onWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Visibility = Visibility.Hidden;
         }//end of onClick method.....
          
 

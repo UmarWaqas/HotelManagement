@@ -40,7 +40,17 @@ namespace HotelManagement
             vmRoom = new RoomViewModel();
             newRoom = new Room();
             this.DataContext = vmRoom;
-            
+            List<Room_Type> empTypeData = factory.selectAll(new Room_Type());
+            cbRoomType.ItemsSource = empTypeData;
+            cbRoomType.DisplayMemberPath = "Type";
+            cbRoomType.SelectedValuePath = "Id";
+            List<Employee> empData=factory.selectAll(new Employee());
+            cbMaintainer.ItemsSource = factory.selectMaintainers(); ;
+            cbMaintainer.SelectedValuePath="Id";
+            cbMaintainer.DisplayMemberPath="Name";
+            cbManager.ItemsSource = factory.selectManagers();
+            cbManager.SelectedValuePath = "Id";
+            cbManager.DisplayMemberPath = "Name";
 
         }//end of method initializeEmployee....
         private void forceValidation()
@@ -78,6 +88,12 @@ namespace HotelManagement
                     MessageBox.Show("Not Inserted");
                
             }
+        }
+
+        private void onWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Visibility = Visibility.Hidden;
         }//end of method forceValidation....
 
     }
