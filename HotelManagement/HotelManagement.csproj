@@ -92,6 +92,12 @@
     <Compile Include="FreeRoomsList.xaml.cs">
       <DependentUpon>FreeRoomsList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ManagerView.xaml.cs">
+      <DependentUpon>ManagerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptionistView.xaml.cs">
+      <DependentUpon>ReceptionistView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ReservationDetails.xaml.cs">
       <DependentUpon>ReservationDetails.xaml</DependentUpon>
     </Compile>
@@ -172,6 +178,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ManagerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReceptionistView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ReservationDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
