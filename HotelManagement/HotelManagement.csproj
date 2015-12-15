@@ -74,8 +74,8 @@
     <Compile Include="AddRoomType.xaml.cs">
       <DependentUpon>AddRoomType.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomerDetails.xaml.cs">
-      <DependentUpon>CustomerDetails.xaml</DependentUpon>
+    <Compile Include="CustomerDetail.xaml.cs">
+      <DependentUpon>CustomerDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomerList.xaml.cs">
       <DependentUpon>CustomerList.xaml</DependentUpon>
@@ -89,8 +89,8 @@
     <Compile Include="EmployeeList.xaml.cs">
       <DependentUpon>EmployeeList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FreeRooms.xaml.cs">
-      <DependentUpon>FreeRooms.xaml</DependentUpon>
+    <Compile Include="FreeRoomsList.xaml.cs">
+      <DependentUpon>FreeRoomsList.xaml</DependentUpon>
     </Compile>
     <Compile Include="ReservationDetails.xaml.cs">
       <DependentUpon>ReservationDetails.xaml</DependentUpon>
@@ -136,7 +136,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CustomerDetails.xaml">
+    <Page Include="CustomerDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,7 +156,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FreeRooms.xaml">
+    <Page Include="FreeRoomsList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\HotelManagement\HotelManagement\App.xaml
-201695375860
+20-1680382091
 
-28-2111847810
+28-1794657980
 16-1092085464
-AddEmployee.xaml;AddJob.xaml;AddReservation.xaml;AddRoom.xaml;AddRoomType.xaml;CustomerDetails.xaml;CustomerList.xaml;EmployeeCatagoryList.xaml;EmployeeDetails.xaml;EmployeeList.xaml;FreeRooms.xaml;MainWindow.xaml;ReservationDetails.xaml;ReservationsList.xaml;ReservedRoomsList.xaml;RoomCatagories.xaml;RoomDetails.xaml;RoomsList.xaml;SignIn.xaml;SignInWindow.xaml;
+AddEmployee.xaml;AddJob.xaml;AddReservation.xaml;AddRoom.xaml;AddRoomType.xaml;CustomerDetail.xaml;CustomerList.xaml;EmployeeCatagoryList.xaml;EmployeeDetails.xaml;EmployeeList.xaml;FreeRoomsList.xaml;MainWindow.xaml;ReservationDetails.xaml;ReservationsList.xaml;ReservedRoomsList.xaml;RoomCatagories.xaml;RoomDetails.xaml;RoomsList.xaml;SignIn.xaml;SignInWindow.xaml;
 
 False
 
