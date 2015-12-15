@@ -26,6 +26,16 @@ namespace DMLibrary.DataLayer
                     }).ToList();
         }
 
+        public Employee findEmployee(string name,string password)
+        {
+            Employee emp = dbContext.Employees.Where(x => x.Email.Equals(name) && x.Password.Equals(password)).FirstOrDefault();
+            if (emp != null)
+            {
+                return emp;
+            }
+            return null;
+        }
+
         public List<ViewModel.EmployeeViewModel> selectMaintainers()
         {
             return (from s in dbContext.Employees.Where(e => e.Employee_Type.Equals(4))

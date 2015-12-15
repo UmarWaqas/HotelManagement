@@ -22,6 +22,11 @@ namespace DMLibrary
             common = new Common();
 
         }
+
+        public Employee singleEmployee(string name,string password)
+        {
+            return employee.findEmployee(name,password);
+        }
         public List<ViewModel.EmployeeViewModel> selectMaintainers()
         {
             return employee.selectMaintainers();

@@ -1,0 +1,35 @@
+﻿<Window x:Class="HotelManagement.ManagerViewMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Abbasi Hotel" Height="350" Width="525" Activated="onWindowActivated" Loaded="onWindowLoaded" Closing="onWindowClosing">
+    <Grid>
+        <Menu Width="600" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Background="CornflowerBlue" FontFamily="Times New Roman" >
+            <MenuItem Header="_File">
+                
+                <MenuItem Header="_Open..." >
+                    <MenuItem Header="Reservations" Click="onReservationListClick"/>
+                    <Separator />
+                    
+                    <MenuItem Header="Customers" Click="onCustomerListClick"/>
+                    <Separator />
+                    <MenuItem Header="Rooms" Click="onRoomsListClick"/>
+                    <Separator />
+                    <MenuItem Header="Free Rooms" Click="onFreeRoomsListClick"/>
+                    <Separator />
+                    <MenuItem Header="Reserved Rooms" Click="onReservedRoomsListClick"/>
+                    
+                    
+                </MenuItem>
+                <Separator />
+
+
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Edit" />
+            <MenuItem Header="_View" />
+            <MenuItem Header="_Window" />
+            <MenuItem Header="_Help" />
+
+        </Menu>
+    </Grid>
+</Window>

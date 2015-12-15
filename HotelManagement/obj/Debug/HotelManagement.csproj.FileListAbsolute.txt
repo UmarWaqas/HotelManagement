@@ -98,21 +98,17 @@ C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\DMLii
 C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\ViewModel.pdb
 C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Umar Waqas\Source\Repos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
-D:\HotelManagement\HotelManagement\obj\Debug\CustomerDetails.baml
 D:\HotelManagement\HotelManagement\obj\Debug\CustomerList.baml
 D:\HotelManagement\HotelManagement\obj\Debug\EmployeeDetails.baml
 D:\HotelManagement\HotelManagement\obj\Debug\EmployeeList.baml
-D:\HotelManagement\HotelManagement\obj\Debug\FreeRooms.baml
 D:\HotelManagement\HotelManagement\obj\Debug\ReservationDetails.baml
 D:\HotelManagement\HotelManagement\obj\Debug\ReservationsList.baml
 D:\HotelManagement\HotelManagement\obj\Debug\ReservedRoomsList.baml
 D:\HotelManagement\HotelManagement\obj\Debug\RoomDetails.baml
 D:\HotelManagement\HotelManagement\obj\Debug\RoomsList.baml
-D:\HotelManagement\HotelManagement\obj\Debug\CustomerDetails.g.cs
 D:\HotelManagement\HotelManagement\obj\Debug\CustomerList.g.cs
 D:\HotelManagement\HotelManagement\obj\Debug\EmployeeDetails.g.cs
 D:\HotelManagement\HotelManagement\obj\Debug\EmployeeList.g.cs
-D:\HotelManagement\HotelManagement\obj\Debug\FreeRooms.g.cs
 D:\HotelManagement\HotelManagement\obj\Debug\ReservationDetails.g.cs
 D:\HotelManagement\HotelManagement\obj\Debug\ReservationsList.g.cs
 D:\HotelManagement\HotelManagement\obj\Debug\ReservedRoomsList.g.cs
@@ -122,3 +118,11 @@ D:\HotelManagement\HotelManagement\obj\Debug\EmployeeCatagoryList.baml
 D:\HotelManagement\HotelManagement\obj\Debug\EmployeeCatagoryList.g.cs
 D:\HotelManagement\HotelManagement\obj\Debug\RoomCatagories.baml
 D:\HotelManagement\HotelManagement\obj\Debug\RoomCatagories.g.cs
+D:\HotelManagement\HotelManagement\obj\Debug\CustomerDetail.baml
+D:\HotelManagement\HotelManagement\obj\Debug\FreeRoomsList.baml
+D:\HotelManagement\HotelManagement\obj\Debug\CustomerDetail.g.cs
+D:\HotelManagement\HotelManagement\obj\Debug\FreeRoomsList.g.cs
+D:\HotelManagement\HotelManagement\obj\Debug\ManagerViewMode.baml
+D:\HotelManagement\HotelManagement\obj\Debug\ReceptionistViewMode.baml
+D:\HotelManagement\HotelManagement\obj\Debug\ManagerViewMode.g.cs
+D:\HotelManagement\HotelManagement\obj\Debug\ReceptionistViewMode.g.cs

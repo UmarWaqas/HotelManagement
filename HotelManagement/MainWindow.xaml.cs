@@ -153,5 +153,11 @@ namespace HotelManagement
         {
             rmCatagories.ShowDialog();
         }
+
+        private void onWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Environment.Exit(0);
+            //e.Cancel = false;
+        }
     }
 }
